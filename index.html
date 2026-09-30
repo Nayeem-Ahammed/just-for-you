@@ -1,1 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Our 1st Anniversary — A Lifetime With You</title>
+    <meta name="description" content="A romantic mobile-first anniversary celebration for my beloved wife, celebrating one year down and a lifetime to go." />
+    <meta name="theme-color" content="#0f0a0d" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Confetti & Particles Canvas -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+    <!-- SECTION 1: THE OPENING EXPERIENCE -->
+    <section id="section-opening" class="opening-section">
+      <div class="ambient-glow"></div>
+      <div class="opening-content">
+        <div id="intro-state" class="intro-box">
+          <p class="intro-subtext">For You... ❤️</p>
+          <button id="btn-begin-journey" class="btn-begin-journey">
+            <span>Tap to Begin Our Journey</span>
+          </button>
+        </div>
+
+        <div id="countdown-state" class="countdown-overlay" style="display: none;">
+          <div id="countdown-number" class="countdown-number">3</div>
+          <p class="countdown-caption">Hold your breath, my love...</p>
+        </div>
+
+        <div id="reveal-state" class="reveal-container" style="display: none;">
+          <div class="anniversary-badge">
+            <span>Our Love Story</span>
+            <span class="dot"></span>
+            <span>Chapter One</span>
+          </div>
+
+          <h1 class="anniversary-heading">
+            Happy 1st Anniversary, <span class="gold-text">My Love</span> ❤️
+          </h1>
+
+          <p class="anniversary-subtitle">
+            One year down… and a lifetime to go.
+          </p>
+
+          <button id="btn-scroll-story" class="btn-scroll-story">
+            <span>Begin Our Story</span>
+            <div class="scroll-indicator-arrow">↓</div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ❤️ OUR STORY SO FAR (VERTICAL TIMELINE) -->
+    <section id="section-story" class="timeline-section">
+      <div class="section-header">
+        <span class="section-kicker">Our Journey Together</span>
+        <h2 class="section-title">❤️ Our Story So Far</h2>
+        <p class="section-desc">
+          The defining chapters that brought two separate lives together into one beautiful forever.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line">
+          <div id="timeline-progress" class="timeline-progress"></div>
+        </div>
+
+        <div class="timeline-item" data-index="0">
+          <div class="timeline-node"><span>🌱</span></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span>Autumn 2019</span>
+              <span aria-hidden="true">·</span>
+              <span>College Life</span>
+            </div>
+            <h3 class="timeline-title">The Beginning ("How We Met")</h3>
+            <p class="timeline-desc">
+             <p>
+              We were school friends first—just two people sharing the same little world, never knowing what our story would become. <br><br>
+              Then school ended, and life took us to different colleges. Somewhere between growing up and growing apart, I realized that my feelings for you had quietly become something more. <br><br>
+              Distance separated our days, but somehow, it brought my heart closer to yours.
+             </p>
+            <blockquote>
+              Some love stories begin with a friendship; ours began before we even knew it was love.
+            </blockquote>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="2">
+          <div class="timeline-node"><span>💍</span></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span>2022 - 2024</span>
+              <span aria-hidden="true">·</span>
+              <span>Mymensingh - Cumilla</span>
+            </div>
+            <h3 class="timeline-title">The Proposal ("Saying Yes")</h3>
+            <p class="timeline-desc">
+              <p>
+                I couldn't keep my feelings hidden anymore, so I proposed to you over the phone. <br><br>
+                You didn't say yes. <br>
+                You simply said, <strong>“We're good friends.”</strong> I understood that you think about your familly.<br><br> 
+
+                But I stayed. We kept talking, kept sharing our days, and slowly, somewhere between all those conversations, your heart found its way to mine. <br><br>
+
+                Then, in <strong>2023</strong>, you finally said the word I had been waiting for — <strong>YES</strong>.
+              </p>
+
+              <blockquote>
+                I asked for your heart once; you gave it to me after making me wait for it.
+              </blockquote>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="1">
+          <div class="timeline-node"><span>☕</span></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span>19 October 2023</span>
+              <span aria-hidden="true">·</span>
+              <span>Zainul Abedin Park, Mymensingh</span>
+            </div>
+            <h3 class="timeline-title">First Date ("Where Officially Met")</h3>
+            <p class="timeline-desc">
+              <p>
+                After so many calls, messages, and countless conversations, we finally met in person on <strong>19 October 2023</strong>. <br><br>
+                It was our first meeting—not the beginning of our story, but the moment our story finally stepped out of the phone and into the real world. <br><br>
+                From that day, our long-distance journey continued. Different places, busy days, and miles between us — but always the same two hearts choosing each other.
+              </p>
+              
+              <blockquote>
+                After countless words through a screen, I finally got to hear your laughter beside me.
+              </blockquote>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-index="3">
+          <div class="timeline-node"><span>👰</span></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span>365 Days Ago</span>
+              <span aria-hidden="true">·</span>
+              <span>Shahgonj, Gouripur, Mymensingh</span>
+            </div>
+            <h3 class="timeline-title">Our Wedding Day ("Becoming Us")</h3>
+            <p class="timeline-desc">
+              <p>
+                And then came the hardest, bravest, and most beautiful chapter of our story. <br><br>
+                On <strong>3 October 2025</strong>, we finally became husband and wife. <br><br><br>
+
+                But I know something that I will never forget—
+                <strong><i>you fought harder for us than I ever could.</i></strong>
+                You carried the weight of difficult conversations. You faced your family. You managed the fears, questions, emotions, and everything that stood between us and this day. <br><br>
+
+                While I was dreaming about our future, you were fighting to make that future possible.
+                You didn't just say you loved me. <br><br>
+
+                <strong><q>You proved it.</q></strong> <br><br>
+
+                You stood for us when it wasn't easy. You held onto our relationship when things could have been much simpler if you had let go. <br><br>
+
+                So when I look at our wedding day, I don't just see the day I became your husband.
+                I see the day your courage, patience, love, and countless efforts finally brought us here.
+                If our marriage has a beginning written in a single word, it is <strong><q>us.</q></strong>
+
+                But if there is someone who deserves the loudest credit for making that <strong><q>us.</q></strong> possible— <br>
+
+                <strong>it's you.</strong> 
+
+                <blockquote>
+                  I may call you my wife, but I will always remember that you were the one who fought hardest to make us one.
+                </blockquote>
+
+                And for everything you did—for every difficult conversation, every tear, every moment you chose us— <br><br>
+
+                <strong>thank you, my love.</strong>
+
+                <blockquote>
+                  You didn't just walk beside me to our wedding day; you carried us there.
+                </blockquote>
+              </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ♾️ REASONS I LOVE YOU (INTERACTIVE REVEAL) -->
+    <section id="section-reasons" class="reasons-section">
+      <div class="reasons-container">
+        <div class="section-header">
+          <h2 class="section-title">♾️ Reasons I Love You</h2>
+          <p class="section-desc">
+            I could give you a thousand reasons... but I keep finding more.
+          </p>
+        </div>
+
+        <div class="infinity-wrap">
+          <div class="infinity-glow-ring"></div>
+          <div class="infinity-symbol">♾️</div>
+        </div>
+
+        <div class="reasons-display-area">
+          <div id="reason-card" class="reason-card">
+            <div class="reason-tag">
+              <span class="heart-dot">💗</span>
+              <span id="reason-number">#00 — Your Smile</span>
+            </div>
+            <p id="reason-text" class="reason-text">
+              <q>
+                You always have a smile on your face. <br>
+                And I don't know how you do it, but whenever you smile, something inside me becomes lighter.
+                Your smile is one of my favorite things in this whole world.
+              </q>
+            </p>
+          </div>
+        </div>
+
+        <button id="btn-give-reason" class="btn-give-reason">
+          <span class="btn-icon">↻</span>
+          <span>See Another Reason ❤️</span>
+        </button>
+
+        <div class="stats-footer">
+          <span>∞ Reasons</span>
+          <span class="stats-separator">•</span>
+          <span>∞ Memories</span>
+          <span class="stats-separator">•</span>
+          <span>∞ Moments</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 📸 US, IN PICTURES (SCRAPBOOK GALLERY) -->
+    <section id="section-gallery" class="gallery-section">
+      <div class="section-header">
+        <span class="section-kicker">Captured Moments</span>
+        <h2 class="section-title">📸 Us, In Pictures</h2>
+        <p class="section-desc">
+          Polaroids of laughter, quiet mornings, and the beauty of growing old together. Tap any photo to relive the story.
+        </p>
+      </div>
+
+      <div class="polaroid-grid">
+        <div class="polaroid-card" data-full-memory="We spent quiet hours together beside the river, talking, laughing, and simply enjoying being close to each other. With the gentle breeze, the sound of the water, and your hand in mine, nothing else seemed to matter. For those moments, the whole world felt a little softer—and being beside you felt like exactly where I was meant to be.">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/photo3.jpg" alt="A beautiful time with together" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">Riverside Moments</h3>
+            <span class="polaroid-date">August - 2024</span>
+            <p class="polaroid-desc">"Hand in hand while the river whispered back to us."</p>
+          </div>
+        </div>
+
+        <div class="polaroid-card" data-full-memory="After all the waiting, all the distance, and all the moments that brought us here, we finally stood together as husband and wife. On that day, I didn't just see the woman I loved—I saw the person I wanted beside me for every tomorrow.">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/biye.jpg" alt="wedding day" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">The Day We Became Us</h3>
+            <span class="polaroid-date">4rd October - 2025 </span>
+            <p class="polaroid-desc">"And then, after all the miles, I finally got to call you mine."</p>
+          </div>
+        </div>
+
+        <div class="polaroid-card" data-full-memory="I like this photo. I don't know why! But when I see you in this photo, it makes me Happy..">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/LikeThis.png" alt="a favorite picture for me!" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">My another favorite picture</h3>
+            <span class="polaroid-date">November 7th - 2025</span>
+            <p class="polaroid-desc">"I took this picture with my hands, but I keep it with my heart."</p>
+          </div>
+        </div>
+
+        <div class="polaroid-card" data-full-memory="You surprised me that day in a way I still remember. I wasn't ready to see you like that—so beautiful, so effortlessly you. For a moment, I forgot what I was going to say and could only look at you.">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/LoveThis.jpg" alt="Two soul in one frame" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">Two soul in one frame</h3>
+            <span class="polaroid-date">November 9, 2026</span>
+            <p class="polaroid-desc">"You didn't just surprise me that day—you stole my breath all over again."</p>
+          </div>
+        </div>
+
+        <div class="polaroid-card" data-full-memory="The downpour came out of nowhere, but we had our trusty umbrella. My shoulder got soaked because I tilted it all over you, and you laughed so sweetly when you noticed. Pure romantic magic.">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/familly.jpeg" alt="Sharing One Umbrella" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">First Eid together</h3>
+            <span class="polaroid-date">March 21th - 2026</span>
+            <p class="polaroid-desc">"Puddles on the street, golden lamp reflections, and laughter."</p>
+          </div>
+        </div>
+
+        <div class="polaroid-card" data-full-memory="Our first little escape together—chasing hills, discovering waterfalls, and ending the day by the sea. We walked, laughed, explored, and made memories that still feel like yesterday. It wasn't just a tour; it was the beginning of so many adventures I hope we get to share.">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/tour.jpeg" alt="1st tour of us" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">Our First Adventure</h3>
+            <span class="polaroid-date">August 5,6 - 2026</span>
+            <p class="polaroid-desc">"Our first adventure together, and somehow every road felt better with you beside me."</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="polaroid-card" data-full-memory="These are only a few of the moments we've collected together. There are so many more pictures, more memories, more silly moments, more quiet moments, and more little pieces of us that could never fit on this page. I couldn't show them all—but I carry every single one of them in my heart.">
+          <div class="tape-strip"></div>
+          <div class="polaroid-image-wrap">
+            <img src="assets/AllinOne.png" alt="1st tour of us" class="polaroid-img" />
+          </div>
+          <div class="polaroid-caption">
+            <h3 class="polaroid-title">And So Many More</h3>
+            <span class="polaroid-date">August 5,6 - 2026</span>
+            <p class="polaroid-desc">"These are only a few pictures from our story; the rest live quietly in my heart."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 🌍 MILES BETWEEN US (S-CURVE & HEART LOOP ROUTE) -->
+    <section id="section-distance" class="distance-section">
+      <div class="distance-container">
+        <div class="section-header">
+          <span class="section-kicker">No Distance Can Separate Us</span>
+          <h2 class="section-title">🌍 Miles Between Us</h2>
+          <p class="section-desc">
+            Different cities, but one heartbeat. Every mile between us is only a reminder of how deeply we belong together.
+          </p>
+        </div>
+
+        <div class="route-card-wrapper" id="route-card-wrapper">
+          <!-- Top Pin: Cumilla - ME (MY COORDINATES) -->
+          <div class="city-node city-origin">
+          <div class="city-photo">
+            <img src="assets/me.jpg" alt="Me">
+          </div>
+          <h3 class="city-name">Cumilla</h3>
+          <span class="city-role">WHERE I AM</span>
+          </div>
+
+          <!-- Route Visual Area with Active Paths & Traveling Heart -->
+          <div class="route-visual-area" id="route-visual-area">
+            <!-- Mobile SVG Path (<768px): S-Curve down to left, loops into heart, curves right down to Mymensingh -->
+            <svg class="route-svg route-svg-mobile" viewBox="0 0 200 360" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="routeGradientMobile" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#d8b36a" />
+                  <stop offset="50%" stop-color="#e8a8b8" />
+                  <stop offset="100%" stop-color="#d8b36a" />
+                </linearGradient>
+                <filter id="glowMobile" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              <path
+                d="M 100 10 C 95 45 55 60 60 100 C 65 125 85 130 100 132 C 80 100 45 105 45 142 C 45 180 75 210 100 234 C 125 210 155 180 155 142 C 155 105 120 100 100 132 C 100 160 150 185 152 230 C 154 285 108 315 100 350"
+                class="route-glow-path"
+              />
+
+              <path
+                id="mobile-path"
+                d="M 100 10 C 95 45 55 60 60 100 C 65 125 85 130 100 132 C 80 100 45 105 45 142 C 45 180 75 210 100 234 C 125 210 155 180 155 142 C 155 105 120 100 100 132 C 100 160 150 185 152 230 C 154 285 108 315 100 350"
+                class="route-active-path"
+                filter="url(#glowMobile)"
+              />
+            </svg>
+
+            <!-- Desktop SVG Path (>=768px): Horizontal Curved Path -->
+            <svg class="route-svg route-svg-desktop" viewBox="0 0 520 110" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="routeGradientDesktop" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#d8b36a" />
+                  <stop offset="50%" stop-color="#e8a8b8" />
+                  <stop offset="100%" stop-color="#d8b36a" />
+                </linearGradient>
+                <filter id="glowDesktop" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                </filter>
+              </defs>
+
+              <path
+                d="M 20 55 C 140 15 220 95 260 55 C 300 15 380 95 500 55"
+                class="route-glow-path"
+              />
+
+              <path
+                id="desktop-path"
+                d="M 20 55 C 140 15 220 95 260 55 C 300 15 380 95 500 55"
+                class="route-active-path"
+                filter="url(#glowDesktop)"
+              />
+            </svg>
+
+            <!-- Traveling Glowing Heart Badge (❤️) -->
+            <div class="traveling-heart-badge" id="traveling-heart-badge" aria-label="Traveling Love">
+              <span class="heart-icon">❤️</span>
+            </div>
+          </div>
+
+         <!-- Bottom Photo: Mymensingh - My Love -->
+        <div class="city-node city-destination">
+          <div class="city-photo">
+            <img src="assets/you.jpg" alt="My Love">
+          </div>
+          <h3 class="city-name">Mymensingh</h3>
+          <span class="city-role">WHERE MY HEART IS</span>
+        </div>
+
+        <br>
+        <div class="distance-subtext-card">
+          <p class="distance-quote">
+            We learned that love doesn't always mean being close. <br><br>
+            Sometimes it means looking at the same moon from different cities, waiting for the next meeting, and choosing each other through every mile between us. <br><br>
+
+            You may be in Mymensingh, and I may be in Cumilla...
+
+            but somehow, my heart has always known its way home. ❤️
+ ❤️"
+          </p>
+          <blockquote>
+          <p class="distance-subquote">
+            Our next destination: <br>
+            A life where there are no miles between us.
+          </p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: 💌 A LETTER FOR YOU (VIRTUAL ENVELOPE & TYPEWRITER) -->
+    <section id="section-letter" class="letter-section">
+      <div class="section-header">
+        <span class="section-kicker">Words From The Soul</span>
+        <h2 class="section-title">💌 A Letter For You</h2>
+        <p class="section-desc">
+          Written from my heart, one letter at a time.
+        </p>
+      </div>
+
+      <div class="letter-stage">
+        <div id="envelope-card" class="envelope-card">
+          <div class="envelope-flap"></div>
+          <div class="envelope-inner">
+            <div id="envelope-seal" class="envelope-seal">💌</div>
+            <p class="envelope-title">A Letter For You</p>
+            <p class="envelope-recipient">To My Beautiful Wife</p>
+            <button id="btn-open-letter" class="btn-open-letter">
+              <span>Open Letter</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="parchment-letter" class="parchment-card">
+          <div class="parchment-content">
+            <div class="parchment-header">
+              <span class="parchment-flourish">❦</span>
+              <span class="parchment-date">Our 1st Anniversary</span>
+              <span class="parchment-flourish">❦</span>
+            </div>
+            <p id="parchment-text" class="parchment-text"></p>
+            <span id="typewriter-cursor" class="typewriter-cursor">|</span>
+            <div class="parchment-footer">
+              <p class="parchment-tagline">Written from my heart ❤️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: 🌙 IF I COULD GO BACK... -->
+    <section id="section-choice" class="choice-section">
+      <div class="choice-container">
+        <div class="choice-card">
+          <div class="choice-crescent">🌙</div>
+          <h2 class="choice-question">
+            "If I could go back to the day we first met... Would I choose you again?"
+          </h2>
+          <p class="choice-hint">Listen to what my heart has answered every single day.</p>
+          <button id="btn-choose-yes" class="btn-choose-yes">
+            <span>YES, A THOUSAND TIMES ❤️</span>
+          </button>
+          <p id="choice-response-subtext" class="choice-response-subtext">
+            In every lifetime, across every parallel universe, in every whisper of wind—I would search until I found only you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: 🕰️ 365 DAYS OF US (COUNTER STATS) -->
+    <section id="section-stats" class="stats-section">
+      <div class="section-header">
+        <span class="section-kicker">One Year of Us</span>
+        <h2 class="section-title">🕰️ 365 Days of Us</h2>
+        <p class="section-desc">
+          Time moves fast, but with you, every single second is a sacred gift.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-icon">🗓️</span>
+          <h3 id="stat-days" class="stat-number">0</h3>
+          <p class="stat-label">Days</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-icon">⏳</span>
+          <h3 id="stat-hours" class="stat-number">0</h3>
+          <p class="stat-label">Hours</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-icon">💓</span>
+          <h3 id="stat-minutes" class="stat-number">0</h3>
+          <p class="stat-label">Minutes</p>
+        </div>
+        <div class="stat-box">
+          <span class="stat-icon">✨</span>
+          <h3 class="stat-number">∞</h3
+          <p class="stat-label">Moments</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: 🫶 LITTLE THINGS I REMEMBER (MEMORY BUBBLES) -->
+    <section id="section-bubbles" class="bubbles-section">
+      <div class="section-header">
+        <span class="section-kicker">Etched in My Soul</span>
+        <h2 class="section-title">🫶 Little Things I Remember</h2>
+        <p class="section-desc">
+          Tap any memory bubble to uncover the quiet, beautiful details I keep close to my heart.
+        </p>
+      </div>
+
+      <div class="bubbles-cloud">
+        <button class="memory-bubble" data-icon="☕" data-title="That First Real Conversation" data-date="October Rainy Evening" data-story="We sat across from each other while raindrops traced the window pane. You tucked a strand of hair behind your ear and I forgot whatever I was about to say.">
+          <span class="bubble-icon">☕</span>
+          <span class="bubble-text">That conversation</span>
+        </button>
+
+        <button class="memory-bubble" data-icon="🌧️" data-title="The Rainy Walk" data-date="April Downpour" data-story="We only had one umbrella. You told me my shoulder was getting completely wet, but seeing you smiling dry and safe was the only thing that mattered.">
+          <span class="bubble-icon">🌧️</span>
+          <span class="bubble-text">That rainy day</span>
+        </button>
+
+        <button class="memory-bubble" data-icon="📞" data-title="Late Night Whispers" data-date="Countless 2:00 AMs" data-story="When sleep wouldn't come and the world went quiet, hearing your voice in my ear made every worry vanish like mist.">
+          <span class="bubble-icon">📞</span>
+          <span class="bubble-text">Late night calls</span>
+        </button>
+
+        <button class="memory-bubble" data-icon="🍰" data-title="Sharing That Dessert" data-date="Anniversary Eve" data-story="You took the biggest bite of the chocolate pastry and smiled with chocolate on your cheek. You are the sweetest delight of my life.">
+          <span class="bubble-icon">🍰</span>
+          <span class="bubble-text">Sharing sweet bites</span>
+        </button>
+
+        <button class="memory-bubble" data-icon="🎶" data-title="Singing Along Off-Key" data-date="Highway Sunset Drives" data-story="Windows rolled down, warm wind tangling your hair, and you singing every lyric with unmatched passion. That is the purest definition of home.">
+          <span class="bubble-icon">🎶</span>
+          <span class="bubble-text">Singing in the car</span>
+        </button>
+
+        <button class="memory-bubble" data-icon="🌅" data-title="Our First Quiet Sunrise" data-date="Dawn on the Balcony" data-story="Wrapped in a warm blanket, watching the sky shift from deep violet to gold, leaning into each other with peaceful gratitude.">
+          <span class="bubble-icon">🌅</span>
+          <span class="bubble-text">That sunrise silence</span>
+        </button>
+
+        <button class="memory-bubble" data-icon="🧸" data-title="Our Secret Inside Jokes" data-date="Every Single Day" data-story="A single glance across a crowded room that makes us both burst into silent laughter while nobody else has a clue.">
+          <span class="bubble-icon">🧸</span>
+          <span class="bubble-text">That inside joke</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION 10: 🌌 OUR FUTURE (CHAPTER ROADMAP) -->
+    <section id="section-future" class="future-section">
+      <div class="section-header">
+        <span class="section-kicker">The Best Is Yet To Come</span>
+        <h2 class="section-title">🌌 This Is Only Chapter One</h2>
+        <p class="section-desc">
+          One year down is our foundation. Here is the roadmap to the rest of our lives together.
+        </p>
+      </div>
+
+      <div class="roadmap-container">
+        <div class="chapter-card active">
+          <div class="chapter-card-header">
+            <h3 class="chapter-title">Chapter 1: The Foundation</h3>
+            <span class="chapter-status">Completed ✓</span>
+          </div>
+          <p class="chapter-desc">
+            One year of learning each other's rhythms, celebrating firsts as husband and wife, and building an unbreakable anchor of trust and warmth.
+          </p>
+        </div>
+
+        <div class="chapter-card">
+          <div class="chapter-card-header">
+            <h3 class="chapter-title">Chapter 2: New Adventures & Horizons</h3>
+            <span class="chapter-status">In Progress ✈️</span>
+          </div>
+          <p class="chapter-desc">
+            Traveling to places we've only bookmarked on our screens, collecting passport stamps, exploring quiet seaside towns, and trying every new food together.
+          </p>
+        </div>
+
+        <div class="chapter-card">
+          <div class="chapter-card-header">
+            <h3 class="chapter-title">Chapter 3: Building Our Sanctuary</h3>
+            <span class="chapter-status">Upcoming 🏡</span>
+          </div>
+          <p class="chapter-desc">
+            Creating a peaceful home filled with plants, bookshelves, soft ambient lighting, cozy Sunday breakfasts, and laughter echoing in every hallway.
+          </p>
+        </div>
+
+        <div class="chapter-card">
+          <div class="chapter-card-header">
+            <h3 class="chapter-title">Chapter 4: Growing Together</h3>
+            <span class="chapter-status">Destined 🌿</span>
+          </div>
+          <p class="chapter-desc">
+            Standing as each other's quiet shield against life's storms, supporting every dream, celebrating every milestone, and growing gentler with every year.
+          </p>
+        </div>
+
+        <div class="chapter-card">
+          <div class="chapter-card-header">
+            <h3 class="chapter-title">Chapter ∞: Endless Chapters Together</h3>
+            <span class="chapter-status">Forever & Always ❤️</span>
+          </div>
+          <p class="chapter-desc">
+            Growing old with wrinkled hands still tightly intertwined, sitting on the porch looking back at a lifetime of pure, uncompromising love.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: ❤️ FINAL SCREEN & REPLAY (CINEMATIC CREDITS) -->
+    <section id="section-credits" class="credits-section">
+      <div class="credits-container">
+        <span class="credits-kicker">Happy 1st Anniversary</span>
+        
+        <h2 class="credits-author-title">
+          Made with love, just for you — <br />
+          <span class="musafir-accent">From Your Musafir ❤️</span>
+        </h2>
+
+        <p class="credits-subtext">
+          Happy 1st Anniversary, My Love • One year down, a lifetime to go.
+        </p>
+
+        <div class="credits-divider"></div>
+
+        <button id="btn-replay-story" class="btn-replay-story">
+          <span>↺ Replay Our Story</span>
+        </button>
+
+        <p class="credits-final-note">
+          "Until the stars burn cold, you will always have my heart."
+        </p>
+      </div>
+    </section>
+
+    <!-- MEMORY POPUP MODAL -->
+    <div id="memory-modal" class="memory-modal-backdrop">
+      <div class="memory-modal-content">
+        <span id="memory-modal-icon" class="memory-modal-icon">☕</span>
+        <h3 id="memory-modal-title" class="memory-modal-title"></h3>
+        <span id="memory-modal-date" class="memory-modal-date"></span>
+        <p id="memory-modal-desc" class="memory-modal-desc"></p>
+        <button id="btn-close-memory" class="btn-close-memory">Keep in Heart ❤️</button>
+      </div>
+    </div>
+
+    <!-- FULLSCREEN BLURRED DARK PHOTO MODAL -->
+    <div id="photo-modal" class="photo-modal-backdrop">
+      <div class="photo-modal-content">
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+        <div class="modal-image-wrap">
+          <img id="modal-img" src="" alt="Expanded memory" class="modal-img" />
+        </div>
+        <div class="modal-body">
+          <h3 id="modal-title" class="modal-title"></h3>
+          <span id="modal-date" class="modal-date"></span>
+          <p id="modal-desc" class="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOATING FIXED AUDIO TOGGLE BUTTON (🎵) -->
+    <button id="fixed-audio-toggle" class="fixed-audio-pill" aria-label="Toggle background music">
+      <span class="audio-icon">🎵</span>
+      <span class="audio-label">Melody Playing</span>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html> 
