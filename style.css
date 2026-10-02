@@ -1234,7 +1234,7 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   Section 9: Memory Bubbles
+   Section 9: Qutoes Bubbles
    ========================================================================== */
 .bubbles-section {
   position: relative;
@@ -1267,6 +1267,60 @@ h1, h2, h3, h4 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: all 0.35s ease;
   animation: floatBubble 5s ease-in-out infinite alternate;
+}
+
+/* =========================================================
+   Mobile Memory Popup
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .memory-modal {
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .memory-modal-content {
+    width: 100%;
+    max-width: 100%;
+
+    /* Never become taller than the mobile screen */
+    max-height: 85dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  /* Only the story scrolls */
+  .memory-story {
+    flex: 1;
+    min-height: 0;
+
+    max-height: calc(85dvh - 70px);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 1.5rem 1.2rem;
+
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+
+    scrollbar-width: thin;
+  }
+
+  /* Keep in Heart stays visible */
+  .keep-in-heart {
+    flex-shrink: 0;
+
+    min-height: 60px;
+    padding: 0.9rem 1rem;
+
+    font-size: 0.95rem;
+  }
 }
 
 .memory-bubble:nth-child(2n) { animation-delay: 1s; }
